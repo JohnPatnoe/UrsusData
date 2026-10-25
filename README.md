@@ -15,11 +15,10 @@ Las paginas y componentes viven en `src/`; los archivos estaticos publicos se gu
 `public/`. Astro genera imagenes AVIF/WebP responsivas durante la compilacion a partir de
 los originales de `src/assets/images/`.
 
-El formulario de contacto no usa EmailJS ni otro servicio de envio. Al enviarlo, prepara un
-mensaje `mailto:` dirigido a `contact@ursusdata.com` en el programa de correo del visitante.
-El visitante debe revisar y enviar el mensaje desde ese programa; el navegador no puede
-enviarlo por su cuenta ni confirmar la entrega. No requiere claves ni configuracion de
-proveedores externos.
+The contact form sends messages through EmailJS using service `Test1234` and template
+`Template1234`. Its template should accept the `name`, `email`, `service`, and `message`
+parameters. The EmailJS public key is configured in `src/pages/contact/index.astro`; keep the
+template's recipient and reply-to settings aligned with your EmailJS account.
 
 La politica de privacidad y los terminos son textos informativos iniciales, no asesoramiento
 legal. Revisa su exactitud y adecuacion a tus servicios, proveedores y jurisdicciones antes

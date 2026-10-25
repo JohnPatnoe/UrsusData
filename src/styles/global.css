@@ -362,7 +362,7 @@ label {
   font-size: 0.95rem;
 }
 
-input, textarea {
+input, select, textarea {
   width: 100%;
   padding: 12px 14px;
   border-radius: 12px;
@@ -371,9 +371,13 @@ input, textarea {
   color: var(--text);
 }
 
-input:focus, textarea:focus {
+input:focus, select:focus, textarea:focus {
   outline: 1px solid rgba(49,245,208,0.3);
   border-color: rgba(49,245,208,0.25);
+}
+
+select {
+  color-scheme: dark;
 }
 
 textarea {
@@ -426,6 +430,10 @@ button.btn {
   min-height: 1.5em;
   margin-top: 12px;
   color: var(--accent);
+}
+
+.form-status[data-state="error"] {
+  color: #ff9b9b;
 }
 
 .legal-content .block {
