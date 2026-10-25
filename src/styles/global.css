@@ -380,6 +380,15 @@ select {
   color-scheme: dark;
 }
 
+select option {
+  color: #12304a;
+  background-color: #fff;
+}
+
+.contact-intro {
+  margin-top: 20px;
+}
+
 textarea {
   min-height: 120px;
   resize: vertical;
